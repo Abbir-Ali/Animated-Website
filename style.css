@@ -1,5 +1,220 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #ffff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#preloader{
+background: #fff url(/img/circle\ preloader.gif) no-repeat center;
+background-size: 35%;
+height: 100vh;
+width: 100%;
+position: fixed;
+z-index: 100;
+
+
+}
+
+.cursor {
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-color: #98c96f;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.cursor-blur {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    background-color: #63a65eb3;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 9;
+}
+
+.nav {
+    /* background-color: rgb(119, 113, 113); */
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 50px;
+    gap: 50px;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav img {
+    height: 70px;
+}
+
+.nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.326);
+}
+
+.main .page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+
+}
+
+.page1 h1 {
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+}
+
+.page1 h1::before {
+    content: "ABBIR ALI";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 2px #98c96f;
+    z-index: -1;
+
+}
+
+
+.page1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 10px 20px;
+}
+
+.page1 p {
+    font-size: 22px;
+    font-weight: 500;
+    width: 40%;
+}
+
+.main .page2 {
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.scroller {
+    /* background: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    /*    
+    animation: scroll;
+    animation-duration:  10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+
+}
+
+.scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.scroller h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 10px;
+    transition: all linear 0.4s;
+    color: transparent;
+    -webkit-text-stroke: 2px #98c96f;
+
+}
+
+.scroller h4:hover {
+    color: #98c96f;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.aboutme {
+    height: 40vh;
+    width: 100%;
+    /* background-color: #98c96f; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    position: relative;
+   
+}
+
+.aboutme img {
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 100px;
+
+}
+
+.aboutme-in {
+    width: 40%;
+    text-align: center;
+}
+.aboutme-in h3{
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.aboutme-in p{
+    font-size: 20px;
+    line-height:26px;
 }

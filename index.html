@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Website</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
 </head>
+
 <body>
-    
+
+    <!-- Preloader -->
+    <div id="preloader">
+
+    </div>
+
+
+
+    <div class="nav">
+        <img src="/img/logo.png" alt="logo">
+        <h4>Home</h4>
+        <h4>About Me</h4>
+        <h4>Services </h4>
+        <h4>Portfolio</h4>
+        <h4>Contact Me</h4>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor-blur"></div>
+    <video autoplay loop muted src="https://sidcupfamilygolf.com/wp-content/uploads/2023/02/hero.mp4"></video>
+
+    <div class="main">
+
+        <div class="page1">
+            <h1>ABBIR ALI</h1>
+            <h2>SOFTWARE ENGINEER | FRONT END WEB DEVELOPER.</h2>
+            <p> I recently graduated with a Bachelor's in Software Engineering. Fueled by an insatiable passion for
+                technology and design, I am on an exciting journey from the world of Software Engineering to the
+                creative realm of Web Development.
+            </p>
+        </div>
+
+        <div class="page2">
+            <div class="scroller">
+                <div class="scroller-in">
+                    <h4>HOME</h4>
+                    <h4>ABOUT ME</h4>
+                    <h4>SERVICES</h4>
+                    <h4>PORTFOLIO</h4>
+                    <h4>CONTACT ME</h4>
+                </div>
+                <div class="scroller-in">
+                    <h4>HOME</h4>
+                    <h4>ABOUT ME</h4>
+                    <h4>SERVICES</h4>
+                    <h4>PORTFOLIO</h4>
+                    <h4>CONTACT ME</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutme">
+
+            <img src="/img/left about me section img.jpg">
+            <div class="aboutme-in">
+                <h3>ABOUT ME</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aperiam, quaerat fuga, quas
+                    dignissimos quasi eum sint eveniet hic molestias nulla sed architecto.</p>
+            </div>
+            <img src="/img/img 3.jpg">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- PRELOADER -->
+    <script>
+        var preloader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            preloader.style.display = "none";
+        })
+    </script>
+
 </body>
+
 </html>
