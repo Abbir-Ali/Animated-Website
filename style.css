@@ -13,13 +13,13 @@ body {
 }
 
 
-#preloader{
-background: #fff url(/img/circle\ preloader.gif) no-repeat center;
-background-size: 35%;
-height: 100vh;
-width: 100%;
-position: fixed;
-z-index: 100;
+#preloader {
+    background: #fff url(/img/preloader.gif) no-repeat center;
+    background-size: 35%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 
 
 }
@@ -184,15 +184,16 @@ video {
 }
 
 .aboutme {
-    height: 40vh;
+   
+    height: 50vh;
     width: 100%;
-    /* background-color: #98c96f; */
+    background-color: #98c96f;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 50px;
     position: relative;
-   
+
 }
 
 .aboutme img {
@@ -208,13 +209,14 @@ video {
     width: 40%;
     text-align: center;
 }
-.aboutme-in h3{
-  font-size: 54px;
-  font-weight: 800;
-  margin-bottom: 25px;
+
+.aboutme-in h3 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 25px;
 }
 
-.aboutme-in p{
+.aboutme-in p {
     font-size: 20px;
-    line-height:26px;
+    line-height: 26px;
 }
