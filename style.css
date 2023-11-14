@@ -87,7 +87,7 @@ video {
     height: 100%;
     width: 100%;
     position: fixed;
-    object-fit: cover;
+    object-fit:cover;
     z-index: -1;
 }
 
@@ -455,14 +455,14 @@ scale: 1;
 }
 
 .footer {
-    height: 40vh;
+    height: 35vh;
     width: 100%;
     background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 6.5vw;
+    justify-content: space-evenly;
+    gap: 4.5vw;
     padding: 0 100px;
   }
   .footer > img {
@@ -483,29 +483,33 @@ scale: 1;
     z-index: 99;
     /* background-color: red; */
   }
-  .f2 h3 {
-    font-size: 1.6vw;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 900;
-    margin-bottom: 8px;
-  }
-  
-  .f3 h3 {
-    font-size: 1.6vw;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 800;
-    margin-bottom: 8px;
-  }
-  .f4 h4 {
+  .f2 h2 {
     font-size: 1vw;
     white-space: nowrap;
     text-transform: uppercase;
-    color: #000;
-    font-weight: 600;
-    line-height: 20px;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .f3 h2 {
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .f3 h2 a{
+    text-decoration: none;
+  }
+  .f4 h2 {
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 25px;
     margin-bottom: 8px;
   }
